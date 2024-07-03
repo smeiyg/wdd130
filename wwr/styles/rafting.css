@@ -33,7 +33,6 @@ div {
 
 
 h1 {
-    position: absolute;
     text-align: center;
 }
 
@@ -55,9 +54,35 @@ footer img {
     width: 60px;
 }
 
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
+.hero {
+    position: relative;
 }
 
+.hero h1 {
+    background-color: rgb(255 255 255 / 0.8);
+}
+
+.hero img {
+    box-sizing: border-box;
+    display: block;
+    height: auto;
+    padding: 0;
+    width: 100%;
+}
+
+.hero article {
+    position: absolute;
+    top: 0;
+}
+
+.hero article img {
+    float: right;
+    max-width: 151px;
+}
+
+.hero--article_content {
+    padding: 2rem;
+    background-color: rgb(255 255 255 / 80%);
+    width: 90%;
+    margin: 2rem auto;
+}
